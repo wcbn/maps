@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8' />
-    <title>WCBN Coverage Map</title>
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+  <head>
+    <meta charset="utf-8" />
+    <title>WCBN 2018 Coverage Map</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
     <style>
-        body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; }
-        .mapboxgl-control-container { display: none !important; }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+      .mapboxgl-control-container {
+        display: none !important;
+      }
     </style>
-</head>
-<body>
-
-<div id='map'></div>
-<script>
-mapboxgl.accessToken =
-  "pk.eyJ1IjoiZGN0YWxib3QiLCJhIjoiY2oyZTA1M2YyMDRzbjJxczVkNTAzOGxlbCJ9.d4nW2fje4KFA7TPNJoH8FA";
-var map = new mapboxgl.Map({
-  container: "map",
-  // style: "mapbox://styles/dctalbot/cjfudt7ic92bi2rqujv8b5qn2",
-  style: "mapbox://styles/dctalbot/cjful2c1j036m2sn08zkgp0ya",
-  center: [-83.743, 42.2808],
-  zoom: 10,
-  attributionControl: false
-});
-</script>
-
-</body>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoiZGN0YWxib3QiLCJhIjoiY2oyZTA1M2YyMDRzbjJxczVkNTAzOGxlbCJ9.d4nW2fje4KFA7TPNJoH8FA";
+      var map = new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/dctalbot/cjq0ehygw0kxy2rpizijvw37g",
+        center: [-83.743, 42.2808],
+        zoom: 10,
+        attributionControl: false
+      });
+    </script>
+  </body>
 </html>
